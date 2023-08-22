@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.logo {
+    display: block;
+    margin-inline: auto;
+    padding: 40px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 30px;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+input:focus {
+    border: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+input::placeholder {
+    display: flex;
+    align-items: flex-end;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+form {
+    position: relative;
+    margin: 15px 0;
+}
+
+form > label {
+    margin: 10px 0;
+}
+
+form > img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.field-select{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.tip-field button {
+    padding: 10px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tip-field button:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.peeps {
+    position: relative;
+}
+
+.peeps > img {
+    position:absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.total-cost-field {
+    background-color: hsl(183, 100%, 20%);
+    padding: 20px;
+}
+
+.amount-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.amount-section p {
+    color: white;
+}
+
+.persona {
+    display: block;
+    font-size: 12px;
+}
+
+.amount {
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+}
+
+.reset {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+@media (min-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-details,
+    .total-cost-field {
+        width: 100%;
+        max-width: 300px;
+    }
+}

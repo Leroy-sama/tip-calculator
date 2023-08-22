@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <main>
+        <img class="logo" src="images/logo.svg" alt="logo image" >
+        <div class="container">
+            <section class="input-details">
+               <form action="/">
+                    <label for="bill">Bill</label><br>
+                    <!-- <img src="images/icon-dollar.svg" alt="dollar icon"> -->
+                    <input type="number" name="bill" id="bill" placeholder="0">
+               </form>
+               <div class="tip-field">
+                    <label for="tips">Select Tip %</label><br>
+                    <div class="field-select">
+                        <button class="five" value="5">5%</button>
+                        <button class="ten" value="10">10%</button>
+                        <button class="fifteen" value="15">15%</button>
+                        <button class="twentyfive" value="25">25%</button>
+                        <button class="fifty" value="50">50%</button>
+                        <input type="number" name="custom" id="custom" placeholder="custom">
+                    </div>
+               </div>
+               <div class="peeps">
+                    <label for="people number">Number of People</label><br>
+                    <!-- <img src="images/icon-person.svg" alt="person-icon"> -->
+                    <input type="number" name="people" id="people" placeholder="0">
+               </div>
+            </section>
+            <section class="total-cost-field">
+                <div class="accumulation">
+                    <div class="amount-section">
+                        <p>Tip Amount <span class="persona">/ person</span></p>
+                        <span class="amount">$0.00</span>
+                    </div>
+                    <div class="amount-section">
+                        <p>Total <span class="persona">/ person</span></p>
+                        <span class="amount">$0.00</span>
+                    </div>
+                </div>
+                <button class="reset" type="reset">Reset</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
